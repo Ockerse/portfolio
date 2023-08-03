@@ -49,7 +49,7 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Blog -->
+			<!-- resume -->
 			
 		
 			<article id="resume">
@@ -62,8 +62,52 @@
 			</article>
 			
 			<!-- Work -->
+			
+
 			<article id="work">
 				<h2 class="major">Projects</h2>
+
+
+				<span class="image main">
+					<h3 class="major">Notsune Miku AI Image Identifier</h3>
+					<a href="https://github.com/Ockerse/notsune-miku" target="_blank">
+						<p>Notsune Miku is my first real passion project that stemmed off of an inside joke within my friend group.
+							The original joke started because one of my friends was known to create characters in video games that shared
+							a resemblance to a Vocoloid character Hatsune Miku. This wasn't true in the slightest but it eventually became
+							a joke that any character he made was automatically Hatsune Miku. This gave me the great idea to try and create
+							some kind of application in this case Python web based that could identify images and categorized them as an actual
+							picture of Hatsune Miku or not. The HTML and CSS is overall pretty simple it's the actual AI learning part that was new to 
+							me. Below is a few screenshots of what the application does as well as a description explaining it in more detail						
+						</p>
+						<img src="images/miku.png" alt="miku" />
+						<br>
+						<p>This project involved building an image classification model using Convolutional Neural Networks (CNNs) to classify images
+							 into two classes. The dataset used for training, validation, and testing is stored in the 'data' directory, with images organized into 
+							 subdirectories representing specific classes. Data preprocessing and augmentation techniques, such as rotation, shifting, zooming, and horizontal
+							  flipping, are applied using the ImageDataGenerator from Keras to enhance the model's ability to generalize. The dataset is split into training,
+							   validation, and test sets, with 70% used for training, 20% for validation, and 10% for testing. To address class imbalance, class weights are 
+							   computed, giving more importance to the minority class during training. The CNN model architecture includes three Convolutional layers with
+							    max-pooling, followed by fully connected layers with dropout to prevent overfitting. The final layer uses a sigmoid activation function for 
+								binary classification.			
+						</p>
+					
+						<img src="images/miku1.png" alt="miku" />
+						<br>
+						<p> The model is trained using the Adam optimizer with binary cross-entropy loss and early stopping to avoid overfitting.
+							Training progress is logged to TensorBoard for analysis and visualization. After training, the model is evaluated on the test set, and metrics
+							 such as accuracy, precision, recall, and binary accuracy are computed to assess its performance. The trained model is then saved for future use 
+							 or deployment.	</p>
+					
+						<img src="images/miku2.png" alt="miku" />
+						<p>I have two links one leading to the GitHub repository and another leading to a Youtube video of me demoing the project as I haven't
+							been able to implement it on a python hosting website.
+						</p>
+						<figcaption><a href="https://github.com/Ockerse/notsune-miku" target="_blank">(Source Code)</a></figcaption>
+						<figcaption><a href="https://youtu.be/ebVpQRI99hk" target="_blank">(Demo Link)</a></figcaption>
+						
+						
+					</a>
+				</span>
 
 				<span class="image main">
 					<h3 class="major">PC Part Searcher</h3>
@@ -82,7 +126,7 @@
 					<p>GUI Creation: The code utilizes the Tkinter library to create a GUI window that includes input fields, buttons, a treeview widget, and a scrollbar.
 					User Input: The user can enter a search term in the provided entry field.</p>
 
-					<p>Search Execution: The user can initiate the search by clicking the "Search" button or pressing the Enter key. The code constructs the search URL based on the input and sends a request to the Newegg website to fetch the search results.
+					<p>Search Execution:</b> The user can initiate the search by clicking the "Search" button or pressing the Enter key. The code constructs the search URL based on the input and sends a request to the Newegg website to fetch the search results.
 					Pagination: The code extracts the total number of result pages from the search results and iterates through each page to scrape the desired information.</p>
 					
 					<p>Data Extraction: Using BeautifulSoup, the code extracts the relevant product information such as name, price, and link. It filters out any irrelevant items that do not match the search term exactly.
@@ -179,7 +223,7 @@
 					JavaScript can be used to create a beautiful and functional website for a special occasion. The
 					streamlined photo gallery and mobile-responsive design are especially impressive, making it easy for
 					guests to access all the information they need in a user-friendly format.</p></p>
-				<span class="image main">
+				<!-- <span class="image main">
 					<h3 class="major">Simon Says</h3>
 					<a href="https://ockerse.github.io/Simon/" target="_blank">
 						<img src="images/simon.png" alt="Simon" />
@@ -234,7 +278,7 @@
 					foster new friendships for their furry companions.</p>
 
 
-				</p>
+				</p> -->
 				<hr>
 				<span class="image main">
 					<h3 class="major">Whirlpool Mobile App</h2>
